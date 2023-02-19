@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
-import{Nav,Hero}from './components'
+import{Nav,Hero,About}from './components'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,6 +10,7 @@ function App() {
     <div className="App">
       <Nav/>
       <Hero/>
+      <About/>
 
      
     </div>
