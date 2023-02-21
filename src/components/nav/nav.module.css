@@ -218,25 +218,6 @@
 
 
 
-.steptext {
-    line-height: 35px;
-    font-weight: 400;
-    color: #9A9A9A;
-    outline: none;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-}
-
-.steptext h4 {
-    vertical-align: baseline;
-    background: transparent;
-    font-size: 46px;
-    color: #fff;
-    font-weight: 700;
-    line-height: 110%;
-    margin-bottom: -10px;
-}
 
 .steptext p {
     font-family: 'Rubik', sans-serif;
@@ -363,21 +344,21 @@
     
     .aboutMainLeft {
         padding-left: 0rem;
-        margin-top: 300px;
+        margin-top: 800px;
     }
     
     .aboutMainRight  {
         padding-right: 0rem;
-        margin-bottom: 500px;
+        margin-bottom: 1000px;
     }
  .HowContainer {
         flex-direction: column;
         
     }
     
-    .stepsContainer {
-       margin-top: -200px;
-    }
+  .stepnum{
+    margin-top: 20px;
+  }
     
     .AllocationContainer {
         display: flex;
