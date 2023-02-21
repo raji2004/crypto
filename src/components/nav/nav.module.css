@@ -378,40 +378,18 @@
 @media screen and (max-width: 600px) {
     .heroText>h1 {
         font-size: 3rem;
-        font-weight: 700;
-        text-align: center;
-    
     }
     .heroText>p {
-        color: #9A9A9A;
         font-size: 1rem;
-        line-height: 35px;
-        font-weight: 400;
-        text-align: center;
     }
     .heroBtn {
-        color: #fff;
-        background-color: transparent;
-        border: 2px solid #fff;
         font-size: 10px;
-        letter-spacing: 2px;
         padding: 5px 20px;
         margin-bottom: 20px;
     }
     
-    .heroBtn:hover {
-        background-color: #fff;
-        color: #000;
-        cursor: pointer;
-        border-color: #39E575;
-    }
-    
     .heroBtnActive {
-        color: #000;
-        background-color: #fff;
-        border: 2px solid #39E575;
         font-size: 10px;
-        letter-spacing: 2px;
         padding: 5px 20px;
         margin-bottom: 20px;
     }
@@ -439,115 +417,23 @@
   .stepnum{
     margin-top: 20px;
   }
-    
-    .AllocationContainer {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: flex-start;
-        width: 100%;
-        padding: 0 60px;
-    }
-    
-    .Allocationleft {
-        line-height: 35px;
-        font-weight: 400;
-        color: #9A9A9A;
-        margin: 0;
-        font-size: 100%;
-        vertical-align: baseline;
-        background: transparent;
-        float: left;
-        position: relative;
-        margin-bottom: 30px;
-        margin-top: 80px;
-        margin-left: 60px;
-        width: 50%;
-    
-    }
-    
-    .Allocationtitle {
-        font-family: 'Rubik', sans-serif;
-        line-height: 35px;
-        font-weight: 400;
-        color: #9A9A9A;
-        margin: 0;
-        vertical-align: baseline;
-        background: transparent;
-        font-size: 16px;
-        margin-bottom: 0;
-        letter-spacing: 2px;
-    }
-    
-    .Allocationleft h2 {
-        vertical-align: baseline;
-        background: transparent;
-        padding: 20px 0;
-        color: #fff;
-        font-size: 60px;
-        line-height: 120%;
-        font-weight: 700;
-        padding-bottom: 35px;
-        margin-top: -20px;
-    }
-    
-    .Allocationleft p {
-        line-height: 35px;
-        font-weight: 400;
-        color: #9A9A9A;
-        margin: 0;
-        font-size: 100%;
-        vertical-align: baseline;
-        background: transparent;
-        margin-bottom: 13px;
-        margin-top: -60px;
-    }
-    
-    .AllocationRight {
-        margin-right: 40px;
-        width: 50%;
-    }
-    
-    
+     
     
 }
 @media screen and (max-width: 500px) {
     .heroText>h1 {
         font-size: 3rem;
-        font-weight: 700;
-        text-align: center;
-    
     }
     .heroText>p {
-        color: #9A9A9A;
         font-size: 1rem;
-        line-height: 35px;
-        font-weight: 400;
-        text-align: center;
     }
     .heroBtn {
-        color: #fff;
-        background-color: transparent;
-        border: 2px solid #fff;
         font-size: 10px;
-        letter-spacing: 2px;
         padding: 5px 20px;
         margin-bottom: 20px;
     }
-    
-    .heroBtn:hover {
-        background-color: #fff;
-        color: #000;
-        cursor: pointer;
-        border-color: #39E575;
-    }
-    
     .heroBtnActive {
-        color: #000;
-        background-color: #fff;
-        border: 2px solid #39E575;
         font-size: 10px;
-        letter-spacing: 2px;
         padding: 5px 20px;
         margin-bottom: 20px;
     }
@@ -557,7 +443,7 @@
     
     .aboutMainLeft {
         padding-left: 0rem;
-        margin-top: 50px;
+        margin-top: 650px;
     }
     
     .aboutMainRight  {
@@ -569,7 +455,7 @@
         
     }
     .whatwrapper{
-        margin-top: -300px;
+        margin-top: 300px;
     }
     
   .stepnum{
