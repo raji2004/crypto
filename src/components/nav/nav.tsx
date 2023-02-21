@@ -104,6 +104,8 @@ export const Bot: React.FC<Botprop> = ({ title, text, style }) => {
 
 export const WhatWeDo: React.FC = () => {
     return (
+        <div className={styles.whatwrapper}>
+            
         <div className={styles.WhatContainer}>
             <div className={styles.aboutHead}>
                 <h4>What're we <br /> doing </h4>
@@ -129,6 +131,7 @@ export const WhatWeDo: React.FC = () => {
             />
 
             <Button text='Read the whitepaper' active style={{ marginTop: 30 }} />
+        </div>
         </div>
     )
 }

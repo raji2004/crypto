@@ -355,6 +355,9 @@
         flex-direction: column;
         
     }
+    .whatwrapper{
+        margin-top: 300px;
+    }
     
   .stepnum{
     margin-top: 20px;
