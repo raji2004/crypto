@@ -2,11 +2,12 @@ import logo from '../../assets/logo.jpg'
 import image from '../../assets/social.jpg'
 import styles from './nav.module.css'
 
+
 export const Nav: React.FC = () => {
     return (
         <div className={styles.container}>
             <div className={styles.navLogo}>
-                <img src={logo} style={{ width: 60 }} alt="logo" />
+                <img src={logo} style={{ width: 60 }} className={styles.logo} alt="logo" />
             </div>
             <div className={styles.navLink}>
                 <a href="#home">Home</a>
@@ -14,6 +15,7 @@ export const Nav: React.FC = () => {
                 <a href="#contact">Token</a>
                 <a href="#aa">Roadmap</a>
                 <a href="#sst">Socials</a>
+               
             </div>
         </div>
     )
@@ -21,14 +23,14 @@ export const Nav: React.FC = () => {
 interface Buttonprops {
     text: string,
     active?: boolean,
-    style?:React.CSSProperties,
+    style?: React.CSSProperties,
 }
-export const Button: React.FC<Buttonprops> = ({ text, active,style }) => {
+export const Button: React.FC<Buttonprops> = ({ text, active, style }) => {
 
     const className = active ? styles.heroBtnActive : styles.heroBtn
     return (
         <div>
-            <button className={className} style={{...style}}>{text}</button>
+            <button className={className} style={{ ...style }}>{text}</button>
         </div>
     )
 }
@@ -87,14 +89,14 @@ export const About: React.FC = () => {
     )
 }
 
-interface Botprop{
+interface Botprop {
     title: string,
-    text:string,
-    style?:React.CSSProperties,
+    text: string,
+    style?: React.CSSProperties,
 }
-export const Bot: React.FC<Botprop> = ({title,text,style}) => {
+export const Bot: React.FC<Botprop> = ({ title, text, style }) => {
     return (
-        <p style={{textAlign:'left',...style}} className={styles.p}>
+        <p style={{ textAlign: 'left', ...style }} className={styles.p}>
             <b>{title}</b> - {text}
         </p>
     )
@@ -109,24 +111,114 @@ export const WhatWeDo: React.FC = () => {
             <p className={styles.wonder}> IN CASE YOU WERE WONDERING </p>
             <h2 className="entry-title medium-text">  Here's a Visual Guide <br />  of what we're building </h2>
             <img src={image} alt="dd" className={styles.whatimg} />
-            <Bot 
-            title='Reverse bot' 
-            text=' - bot will be built to tell you the exact opposite of what you want to hear - Twitter one will also be made'
+            <Bot
+                title='Reverse bot'
+                text=' - bot will be built to tell you the exact opposite of what you want to hear - Twitter one will also be made'
             />
-            <Bot 
-            title='Locker bot' 
-            text=' - lock your liquidity from the comfort of telegram'
+            <Bot
+                title='Locker bot'
+                text=' - lock your liquidity from the comfort of telegram'
             />
-            <Bot 
-            title='Gamble bot' 
-            text=' - use gamble bot to double or nothing your $IA for fun other project will also be able to use this bot so investors their can double or nothing their own tokens'
+            <Bot
+                title='Gamble bot'
+                text=' - use gamble bot to double or nothing your $IA for fun other project will also be able to use this bot so investors their can double or nothing their own tokens'
             />
-            <Bot 
-            title='PhotoNFT bot' 
-            text=' - Take photos of anything and turn them into pixelated NFTs, 3D NFTs or basic 2D NFTs'
+            <Bot
+                title='PhotoNFT bot'
+                text=' - Take photos of anything and turn them into pixelated NFTs, 3D NFTs or basic 2D NFTs'
             />
 
-            <Button text='Read the whitepaper' active style={{marginTop:30}}/>
+            <Button text='Read the whitepaper' active style={{ marginTop: 30 }} />
+        </div>
+    )
+}
+
+interface Stepsprop {
+    stepnum?: number,
+    stephead?: string,
+    steptext?: string,
+}
+
+export const Steps: React.FC<Stepsprop> = ({ stepnum, stephead, steptext }) => {
+    return (
+        <div className={styles.stepsContainer}>
+            <p className={styles.stepnum}>{stepnum}</p>
+            <div className={styles.steptext}>
+                <h4>{stephead}</h4>
+                <p>
+                    {steptext} {stepnum === 1 ? <a href="https://app.uniswap.org/#/swap?outputCurrency=0xab2f723b5b28b059499e5331b7ad6017e4963a1e">here</a> : null} </p>
+                <br />
+
+            </div>
+        </div>
+    )
+}
+Steps.defaultProps = {
+    stepnum: 1,
+    stephead: "Connct your wallet",
+    steptext: "  Use Trust Wallet, Metamask or any wallet to connect to Uniswap (or click "
+
+}
+
+export const Howtobuy: React.FC = () => {
+    return (
+        <div className={styles.WhatContainer}>
+            <div className={styles.aboutHead}>
+                <h4>How to buy</h4>
+            </div>
+            <div className={styles.HowContainer}>
+                <Steps />
+                <Steps
+                    stepnum={2}
+                    stephead="Select your quantity"
+                    steptext='Choose the amount of IA tokens you want to buy.'
+                />
+                <Steps
+                    stepnum={3}
+                    stephead="Confirm the transaction"
+                    steptext='Review that the details are correct and hit confirm'
+                />
+                <Steps
+                    stepnum={4}
+                    stephead="Recieve your token"
+                    steptext=' and Hold them safely'
+                />
+            </div>
+
+        </div>
+
+    )
+}
+export const Allocation: React.FC = () => {
+    return (
+        <div className={styles.WhatContainer}>
+            <div className={styles.aboutHead}>
+                <h4>Allocation</h4>
+            </div>
+            <div className={styles.AllocationContainer}>
+
+                <div className={styles.Allocationleft}>
+                    <p className={styles.Allocationtitle}>
+                        THE NUMBERS
+                    </p>
+                    <h2 className="entry-title medium-text">
+                        Tax <br />
+                        Distribution
+                    </h2>
+                    <p>
+                        The 5/5 taxes will be split between 2 main routes.
+                    </p>
+                    <Button text='Our Roadmap' active />
+                </div>
+
+                <div className={styles.AllocationRight}>
+
+                    
+                </div>
+
+            </div>
+
+
         </div>
     )
 }

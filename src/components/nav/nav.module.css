@@ -54,9 +54,10 @@
     align-items: center;
     padding: 0 40px;
     gap: 5px;
-   
+
 
 }
+
 
 .heroBtn {
     color: #fff;
@@ -74,7 +75,8 @@
     cursor: pointer;
     border-color: #39E575;
 }
-.heroBtnActive{
+
+.heroBtnActive {
     color: #000;
     background-color: #fff;
     border: 2px solid #39E575;
@@ -83,7 +85,8 @@
     padding: 10px 40px;
     margin-bottom: 20px;
 }
-.heroBtnActive:hover{
+
+.heroBtnActive:hover {
     background-color: transparent;
     color: #fff;
     cursor: pointer;
@@ -129,6 +132,7 @@
     font-size: 16px;
     color: #9A9A9A;
 }
+
 .WhatContainer {
     display: flex;
     flex-direction: column;
@@ -138,7 +142,8 @@
     /* padding: 10px 30px; */
     color: #fff;
 }
-.whatimg{
+
+.whatimg {
     font-family: 'Rubik', sans-serif;
     line-height: 35px;
     vertical-align: baseline;
@@ -148,7 +153,8 @@
     width: auto;
     height: auto;
 }
-.wonder{
+
+.wonder {
     font-family: 'Rubik', sans-serif;
     line-height: 35px;
     font-weight: 400;
@@ -160,7 +166,8 @@
     margin-bottom: 0;
     letter-spacing: 2px;
 }
-.WhatContainer > h2{
+
+.WhatContainer>h2 {
     font-family: 'Rubik', sans-serif;
     text-align: center;
     vertical-align: baseline;
@@ -172,7 +179,8 @@
     font-weight: 700;
     padding-bottom: 35px;
 }
-.p{
+
+.p {
     line-height: 35px;
     font-weight: 400;
     color: #9A9A9A;
@@ -182,4 +190,263 @@
     padding: 0;
     text-align: left;
     align-self: flex-start;
+}
+
+.HowContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 0 40px;
+    gap: 20px;
+}
+
+.stepnum {
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 264px;
+    font-weight: 700;
+    color: #0a0a0a;
+    text-shadow: -1px 0 #39E575,
+        0 1px #39E575,
+        1px 0 #39E575,
+        0 -1px #39E575;
+    line-height: 100%;
+    height: 165px;
+    overflow: hidden;
+    margin-bottom: -10px;
+    margin-top: 10px;
+}
+
+
+
+.steptext {
+    line-height: 35px;
+    font-weight: 400;
+    color: #9A9A9A;
+    outline: none;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.steptext h4 {
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 46px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 110%;
+    margin-bottom: -10px;
+}
+
+.steptext p {
+    font-family: 'Rubik', sans-serif;
+    line-height: 35px;
+    font-weight: 400;
+    color: #9A9A9A;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    margin-bottom: 13px;
+}
+
+.AllocationContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 60px;
+}
+
+.Allocationleft {
+    line-height: 35px;
+    font-weight: 400;
+    color: #9A9A9A;
+    margin: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    float: left;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 80px;
+    margin-left: 60px;
+    width: 50%;
+
+}
+
+.Allocationtitle {
+    font-family: 'Rubik', sans-serif;
+    line-height: 35px;
+    font-weight: 400;
+    color: #9A9A9A;
+    margin: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 16px;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+}
+
+.Allocationleft h2 {
+    vertical-align: baseline;
+    background: transparent;
+    padding: 20px 0;
+    color: #fff;
+    font-size: 60px;
+    line-height: 120%;
+    font-weight: 700;
+    padding-bottom: 35px;
+    margin-top: -20px;
+}
+
+.Allocationleft p {
+    line-height: 35px;
+    font-weight: 400;
+    color: #9A9A9A;
+    margin: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    margin-bottom: 13px;
+    margin-top: -60px;
+}
+
+.AllocationRight {
+    margin-right: 40px;
+    width: 50%;
+}
+
+@media screen and (max-width: 700px) {
+    .heroText>h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        text-align: center;
+    
+    }
+    .heroText>p {
+        color: #9A9A9A;
+        font-size: 1rem;
+        line-height: 35px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .heroBtn {
+        color: #fff;
+        background-color: transparent;
+        border: 2px solid #fff;
+        font-size: 10px;
+        letter-spacing: 2px;
+        padding: 5px 20px;
+        margin-bottom: 20px;
+    }
+    
+    .heroBtn:hover {
+        background-color: #fff;
+        color: #000;
+        cursor: pointer;
+        border-color: #39E575;
+    }
+    
+    .heroBtnActive {
+        color: #000;
+        background-color: #fff;
+        border: 2px solid #39E575;
+        font-size: 10px;
+        letter-spacing: 2px;
+        padding: 5px 20px;
+        margin-bottom: 20px;
+    }
+    .aboutMain{
+        flex-direction: column;
+    }
+    
+    .aboutMainLeft {
+        padding-left: 0rem;
+        margin-top: 300px;
+    }
+    
+    .aboutMainRight  {
+        padding-right: 0rem;
+        margin-bottom: 500px;
+    }
+ .HowContainer {
+        flex-direction: column;
+        
+    }
+    
+    .stepsContainer {
+       margin-top: -200px;
+    }
+    
+    .AllocationContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 0 60px;
+    }
+    
+    .Allocationleft {
+        line-height: 35px;
+        font-weight: 400;
+        color: #9A9A9A;
+        margin: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+        float: left;
+        position: relative;
+        margin-bottom: 30px;
+        margin-top: 80px;
+        margin-left: 60px;
+        width: 50%;
+    
+    }
+    
+    .Allocationtitle {
+        font-family: 'Rubik', sans-serif;
+        line-height: 35px;
+        font-weight: 400;
+        color: #9A9A9A;
+        margin: 0;
+        vertical-align: baseline;
+        background: transparent;
+        font-size: 16px;
+        margin-bottom: 0;
+        letter-spacing: 2px;
+    }
+    
+    .Allocationleft h2 {
+        vertical-align: baseline;
+        background: transparent;
+        padding: 20px 0;
+        color: #fff;
+        font-size: 60px;
+        line-height: 120%;
+        font-weight: 700;
+        padding-bottom: 35px;
+        margin-top: -20px;
+    }
+    
+    .Allocationleft p {
+        line-height: 35px;
+        font-weight: 400;
+        color: #9A9A9A;
+        margin: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+        margin-bottom: 13px;
+        margin-top: -60px;
+    }
+    
+    .AllocationRight {
+        margin-right: 40px;
+        width: 50%;
+    }
+    
+    
+    
 }
