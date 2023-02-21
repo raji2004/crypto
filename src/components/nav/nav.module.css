@@ -19,7 +19,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
- 
+
 }
 
 .heroText {
@@ -240,6 +240,7 @@
     padding: 0 60px;
 }
 
+
 .Allocationleft {
     line-height: 35px;
     font-weight: 400;
@@ -275,7 +276,7 @@
     background: transparent;
     padding: 20px 0;
     color: #fff;
-    font-size: 60px;
+    font-size: 50px;
     line-height: 120%;
     font-weight: 700;
     padding-bottom: 35px;
@@ -298,170 +299,333 @@
     margin-right: 40px;
     width: 50%;
 }
+
+.Skillcontainer>h4 {
+    font-size: 30px;
+}
+
+.Skillcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+    justify-content: space-between;
+    margin-right: 80px;
+}
+
+.progress {
+    width: 100%;
+    margin-left: 30px;
+}
+
+.div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 @media screen and (max-width: 1024px) {
-    .aboutMain{
+    .aboutMain {
         display: flex;
         flex-direction: column;
     }
-  .aboutMainLeft{
-    padding-left: 0;
-    margin-top: 500px;
-  }
-  .whatwrapper{
-    margin-top: 500px;
+
+    .aboutMainLeft {
+        padding-left: 0;
+        margin-top: 500px;
+    }
+
+    .whatwrapper {
+        margin-top: 500px;
+    }
+
+
+
 }
 
- 
-
-}@media screen and (max-width: 1000px) {
-    .aboutMain{
+@media screen and (max-width: 1000px) {
+    .aboutMain {
         display: flex;
         flex-direction: column;
     }
-  .aboutMainLeft{
-    padding-left: 0;
-    margin-top: -500px;
-  }
-  .whatwrapper{
-    margin-top: -500px;
-}
 
- 
+    .aboutMainLeft {
+        padding-left: 0;
+        margin-top: -500px;
+    }
+
+    .whatwrapper {
+        margin-top: -500px;
+    }
+
+
 }
 
 @media screen and (max-width: 700px) {
     .heroText>h1 {
         font-size: 3rem;
-      
-    
+
+
     }
+
     .heroText>p {
-        font-size: 1rem;   
+        font-size: 1rem;
     }
+
     .heroBtn {
         padding: 5px 20px;
         margin-bottom: 20px;
-    } 
+    }
+
     .heroBtnActive {
         font-size: 10px;
         padding: 10px 20px;
         margin-bottom: 20px;
     }
-    .aboutMain{
+
+    .aboutMain {
         flex-direction: column;
     }
-    
+
     .aboutMainLeft {
         padding-left: 0rem;
         margin-top: 1300px;
     }
-    
-    .aboutMainRight  {
+
+    .aboutMainRight {
         padding-right: 0rem;
         margin-bottom: 1000px;
     }
- .HowContainer {
+
+    .HowContainer {
         flex-direction: column;
-        
+
     }
-    .whatwrapper{
+
+    .whatwrapper {
         margin-top: 300px;
     }
-    
-  .stepnum{
-    margin-top: 20px;
-  }
-    
-    
-    
+
+    .stepnum {
+        margin-top: 20px;
+    }
+
+    .AllocationContainer {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .AllocationRight {
+        width: 100%;
+    }
+
+    .Allocationleft>h2 {
+        font-size: 30px;
+    }
+
+    .Skillcontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        margin-right: 0;
+    }
+
+    .Skillcontainer>h4 {
+        margin: 0;
+    }
+
+    .progress {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .progress>h4 {
+        align-self: center;
+    }
+
+
+
+
 }
+
 @media screen and (max-width: 600px) {
     .heroText>h1 {
         font-size: 3rem;
     }
+
     .heroText>p {
         font-size: 1rem;
     }
+
     .heroBtn {
         font-size: 10px;
         padding: 5px 20px;
         margin-bottom: 20px;
     }
-    
+
     .heroBtnActive {
         font-size: 10px;
         padding: 5px 20px;
         margin-bottom: 20px;
     }
-    .aboutMain{
+
+    .aboutMain {
         flex-direction: column;
     }
-    
+
     .aboutMainLeft {
         padding-left: 0rem;
         margin-top: 400px;
     }
-    
-    .aboutMainRight  {
+
+    .aboutMainRight {
         padding-right: 0rem;
         margin-bottom: 1000px;
     }
- .HowContainer {
+
+    .HowContainer {
         flex-direction: column;
-        
+
     }
-    .whatwrapper{
+
+    .whatwrapper {
         margin-top: -600px;
     }
-    
-  .stepnum{
-    margin-top: 20px;
-  }
-     
-    
+
+    .stepnum {
+        margin-top: 20px;
+    }
+
+    .AllocationContainer {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .AllocationRight {
+        width: 100%;
+    }
+
+    .Allocationleft>h2 {
+        font-size: 30px;
+    }
+
+    .Skillcontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .Skillcontainer>h4 {
+        margin: 0;
+    }
+
+    .progress {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .progress>h4 {
+        align-self: center;
+    }
+
 }
+
 @media screen and (max-width: 500px) {
     .heroText>h1 {
         font-size: 3rem;
     }
+
     .heroText>p {
         font-size: 1rem;
     }
+
     .heroBtn {
         font-size: 10px;
         padding: 5px 20px;
         margin-bottom: 20px;
     }
+
     .heroBtnActive {
         font-size: 10px;
         padding: 5px 20px;
         margin-bottom: 20px;
     }
-    .aboutMain{
+
+    .aboutMain {
         flex-direction: column;
     }
-    
+
     .aboutMainLeft {
         padding-left: 0rem;
         margin-top: 750px;
     }
-    
-    .aboutMainRight  {
+
+    .aboutMainRight {
         padding-right: 0rem;
         margin-bottom: 400px;
     }
- .HowContainer {
+
+    .HowContainer {
         flex-direction: column;
-        
+
     }
-    .whatwrapper{
+
+    .whatwrapper {
         margin-top: 300px;
     }
-    
-  .stepnum{
-    margin-top: 20px;
-  }
-    
-    
-    
+
+    .stepnum {
+        margin-top: 20px;
+    }
+
+    .AllocationContainer {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .AllocationRight {
+        width: 100%;
+    }
+
+    .Allocationleft>h2 {
+        font-size: 30px;
+    }
+
+    .Skillcontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .Skillcontainer>h4 {
+        margin: 0;
+    }
+
+    .progress {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .progress>h4 {
+        align-self: center;
+    }
+
+
+
 }

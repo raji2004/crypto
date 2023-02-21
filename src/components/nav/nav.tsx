@@ -1,6 +1,7 @@
 import logo from '../../assets/logo.jpg'
 import image from '../../assets/social.jpg'
 import styles from './nav.module.css'
+import LinearProgress from '@mui/material/LinearProgress';
 
 
 export const Nav: React.FC = () => {
@@ -15,7 +16,7 @@ export const Nav: React.FC = () => {
                 <a href="#contact">Token</a>
                 <a href="#aa">Roadmap</a>
                 <a href="#sst">Socials</a>
-               
+
             </div>
         </div>
     )
@@ -105,33 +106,33 @@ export const Bot: React.FC<Botprop> = ({ title, text, style }) => {
 export const WhatWeDo: React.FC = () => {
     return (
         <div className={styles.whatwrapper}>
-            
-        <div className={styles.WhatContainer}>
-            <div className={styles.aboutHead}>
-                <h4>What're we <br /> doing </h4>
-            </div>
-            <p className={styles.wonder}> IN CASE YOU WERE WONDERING </p>
-            <h2 className="entry-title medium-text">  Here's a Visual Guide <br />  of what we're building </h2>
-            <img src={image} alt="dd" className={styles.whatimg} />
-            <Bot
-                title='Reverse bot'
-                text=' - bot will be built to tell you the exact opposite of what you want to hear - Twitter one will also be made'
-            />
-            <Bot
-                title='Locker bot'
-                text=' - lock your liquidity from the comfort of telegram'
-            />
-            <Bot
-                title='Gamble bot'
-                text=' - use gamble bot to double or nothing your $IA for fun other project will also be able to use this bot so investors their can double or nothing their own tokens'
-            />
-            <Bot
-                title='PhotoNFT bot'
-                text=' - Take photos of anything and turn them into pixelated NFTs, 3D NFTs or basic 2D NFTs'
-            />
 
-            <Button text='Read the whitepaper' active style={{ marginTop: 30 }} />
-        </div>
+            <div className={styles.WhatContainer}>
+                <div className={styles.aboutHead}>
+                    <h4>What're we <br /> doing </h4>
+                </div>
+                <p className={styles.wonder}> IN CASE YOU WERE WONDERING </p>
+                <h2 className="entry-title medium-text">  Here's a Visual Guide <br />  of what we're building </h2>
+                <img src={image} alt="dd" className={styles.whatimg} />
+                <Bot
+                    title='Reverse bot'
+                    text=' - bot will be built to tell you the exact opposite of what you want to hear - Twitter one will also be made'
+                />
+                <Bot
+                    title='Locker bot'
+                    text=' - lock your liquidity from the comfort of telegram'
+                />
+                <Bot
+                    title='Gamble bot'
+                    text=' - use gamble bot to double or nothing your $IA for fun other project will also be able to use this bot so investors their can double or nothing their own tokens'
+                />
+                <Bot
+                    title='PhotoNFT bot'
+                    text=' - Take photos of anything and turn them into pixelated NFTs, 3D NFTs or basic 2D NFTs'
+                />
+
+                <Button text='Read the whitepaper' active style={{ marginTop: 30 }} />
+            </div>
         </div>
     )
 }
@@ -192,6 +193,26 @@ export const Howtobuy: React.FC = () => {
 
     )
 }
+
+interface Skillprop {
+    number: number,
+    name: string,
+    progress: number,
+}
+
+const Skill: React.FC<Skillprop> = ({ number, name, progress }) => {
+    return (
+        <div className={styles.Skillcontainer}>
+            <h4>{number}% </h4>
+            <div className={styles.progress}>
+                <h4>{name}</h4>
+                <LinearProgress variant="determinate" color='success' value={progress} />
+            </div>
+        </div>
+    )
+}
+
+
 export const Allocation: React.FC = () => {
     return (
         <div className={styles.WhatContainer}>
@@ -213,11 +234,11 @@ export const Allocation: React.FC = () => {
                     </p>
                     <Button text='Our Roadmap' active />
                 </div>
-
-                <div className={styles.AllocationRight}>
-
-                    
+                <div className={styles.div}>
+                    <Skill number={4} name="marketing" progress={70} />
+                    <Skill number={1} name="Liquidity pool" progress={30} />
                 </div>
+
 
             </div>
 
