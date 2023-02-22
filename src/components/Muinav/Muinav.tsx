@@ -26,7 +26,28 @@ interface Props {
 }
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About Us', 'Token', "Roadmap", 'Social'];
+const navItems = [
+    {
+        name: 'Home',
+        link: '#home'
+    }, {
+        name: 'About Us',
+        link: '#about'
+    },
+     {
+        name: 'Token',
+        link: '#contact'
+    },
+     {
+        name: 'Roadmap',
+        link: '#aa'
+    },
+     {
+        name: 'Socials',
+        link: '#socials'
+    },
+];
+
 
 export const DrawerAppBar: React.FC = (props: Props) => {
     const { window } = props;
@@ -55,9 +76,9 @@ export const DrawerAppBar: React.FC = (props: Props) => {
             <Divider />
             <List >
                 {navItems.map((item) => (
-                    <ListItem key={item} disablePadding>
-                        <ListItemButton sx={{ textAlign: 'center' }}>
-                            <ListItemText primary={item} />
+                    <ListItem key={item.name} disablePadding>
+                        <ListItemButton sx={{ textAlign: 'center' }} href={item.link}>
+                            <ListItemText primary={item.name} />
                         </ListItemButton>
                     </ListItem>
                 ))}
@@ -92,8 +113,8 @@ export const DrawerAppBar: React.FC = (props: Props) => {
                         </Typography>
                         <Box sx={{ display: { xs: 'none', sm: 'block' } }} >
                             {navItems.map((item) => (
-                                <Button key={item} sx={{ color: '#fff' }} className={styles.nav}>
-                                    {item}
+                                <Button key={item.link} sx={{ color: '#fff' }} className={styles.nav} href={item.link}>
+                                    {item.name}
                                 </Button>
                             ))}
                         </Box>
@@ -112,7 +133,7 @@ export const DrawerAppBar: React.FC = (props: Props) => {
                             display: { xs: 'block', sm: 'none' },
                             '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
                         }}
-                        
+
 
                     >
                         {drawer}

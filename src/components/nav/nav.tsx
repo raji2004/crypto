@@ -39,7 +39,7 @@ export const Button: React.FC<Buttonprops> = ({ text, active, style }) => {
 
 export const Hero: React.FC = () => {
     return (
-        <div className={styles.heroContainer}>
+        <div className={styles.heroContainer} id="home">
             <div className={styles.heroText}>
                 <h1>
                     $AI tech <br />
@@ -240,6 +240,33 @@ export const Allocation: React.FC = () => {
                 </div>
 
 
+            </div>
+
+
+        </div>
+    )
+}
+export const Social: React.FC = () => {
+    return (
+        <div className={styles.WhatContainer} id="socials">
+            <div className={styles.aboutHead}>
+                <h4>Social</h4>
+            </div>
+            <div className={styles.AllocationContain}>
+                <p className={styles.Allocationtitle}>
+                    Want to join the community?
+                </p>
+                <h2 className="entry-title medium-text" style={{paddingBottom:0}}>
+                    Connect with <br />
+                    Us.
+                </h2>
+                <p className={styles.Allocationtitle}>
+                    Want to join the community?
+                </p>
+                <div className={styles.socials}>
+                    <a href="https://twitter.com/IA_Token" target="_blank" rel="noreferrer"> Telegram</a>
+                    <a href="https://twitter.com/IA_Token" target="_blank" rel="noreferrer"> Twitter</a>
+                </div>
             </div>
 
 

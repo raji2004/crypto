@@ -207,7 +207,7 @@
     background: transparent;
     font-size: 264px;
     font-weight: 700;
-    color: #0a0a0a;
+    color: #131111;
     text-shadow: -1px 0 #39E575,
         0 1px #39E575,
         1px 0 #39E575,
@@ -272,8 +272,25 @@
     margin-bottom: 0;
     letter-spacing: 2px;
 }
+.AllocationContain{
+    align-self: flex-start;
+    padding: 50px;
+    
+}
+.socials a{
+    color: rgb(52, 215, 68);
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 10px;
+}
+.socials a:hover{
+    color: rgba(9, 228, 9, 0.331);
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 10px;
+}
 
-.Allocationleft h2 {
+.Allocationleft h2,.AllocationContain>h2 {
     vertical-align: baseline;
     background: transparent;
     padding: 20px 0;
