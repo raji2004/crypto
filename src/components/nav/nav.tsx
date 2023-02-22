@@ -25,13 +25,14 @@ interface Buttonprops {
     text: string,
     active?: boolean,
     style?: React.CSSProperties,
+    href?: string
 }
-export const Button: React.FC<Buttonprops> = ({ text, active, style }) => {
+export const Button: React.FC<Buttonprops> = ({ text, active, style ,href}) => {
 
     const className = active ? styles.heroBtnActive : styles.heroBtn
     return (
         <div>
-            <button className={className} style={{ ...style }}>{text}</button>
+            <a className={className} href={href} style={{ ...style }}>{text}</a>
         </div>
     )
 }
@@ -55,7 +56,7 @@ export const Hero: React.FC = () => {
             <div className={styles.heroBtnContainer}>
                 <Button text="Buy $AI tech" active={true} />
                 <Button text="Chart" />
-                <Button text="Community" />
+                <Button text="Community" href='https://t.me/AlienAIprotocol' />
             </div>
 
         </div>
@@ -131,7 +132,7 @@ export const WhatWeDo: React.FC = () => {
                     text=' - Take photos of anything and turn them into pixelated NFTs, 3D NFTs or basic 2D NFTs'
                 />
 
-                <Button text='Read the whitepaper' active style={{ marginTop: 30 }} />
+                <Button text='Read the whitepaper' active style={{ marginTop:50 }} />
             </div>
         </div>
     )

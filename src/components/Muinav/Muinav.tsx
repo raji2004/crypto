@@ -34,15 +34,15 @@ const navItems = [
         name: 'About Us',
         link: '#about'
     },
-     {
+    {
         name: 'Token',
         link: '#contact'
     },
-     {
+    {
         name: 'Roadmap',
         link: '#aa'
     },
-     {
+    {
         name: 'Socials',
         link: '#socials'
     },
@@ -70,9 +70,7 @@ export const DrawerAppBar: React.FC = (props: Props) => {
 
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-            <Typography variant="h6" sx={{ my: 2 }}>
-                <img src={logo} alt="t" style={{ width: '30%', }} />
-            </Typography>
+
             <Divider />
             <List >
                 {navItems.map((item) => (
@@ -95,6 +93,9 @@ export const DrawerAppBar: React.FC = (props: Props) => {
                 <CssBaseline />
                 <AppBar component="nav" className={styles.bg}>
                     <Toolbar className={styles.bg}>
+                        <Typography variant="h6" sx={{ my: 2,display:{sm:'none'} }}>
+                            <img src={logo} alt="t" style={{ width: '5%', }} />
+                        </Typography>
                         <IconButton
                             color="inherit"
                             aria-label="open drawer"

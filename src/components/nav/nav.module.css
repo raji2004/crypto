@@ -34,7 +34,7 @@
 }
 
 .heroText>h1 {
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 700;
     text-align: center;
 
@@ -70,6 +70,7 @@
     letter-spacing: 2px;
     padding: 10px 40px;
     margin-bottom: 20px;
+    text-decoration: none;
 }
 
 .heroBtn:hover {
@@ -87,6 +88,7 @@
     letter-spacing: 2px;
     padding: 10px 40px;
     margin-bottom: 20px;
+    text-decoration: none;
 }
 
 .heroBtnActive:hover {
