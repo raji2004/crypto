@@ -64,7 +64,7 @@ export const Hero: React.FC = () => {
 
 export const About: React.FC = () => {
     return (
-        <div className={styles.aboutContainer}>
+        <div className={styles.aboutContainer} id="about">
             <div className={styles.aboutHead}>
                 <h4>About</h4>
             </div>
@@ -107,7 +107,7 @@ export const WhatWeDo: React.FC = () => {
     return (
         <div className={styles.whatwrapper}>
 
-            <div className={styles.WhatContainer}>
+            <div className={styles.WhatContainer} id="token">
                 <div className={styles.aboutHead}>
                     <h4>What're we <br /> doing </h4>
                 </div>
@@ -166,7 +166,7 @@ Steps.defaultProps = {
 
 export const Howtobuy: React.FC = () => {
     return (
-        <div className={styles.WhatContainer}>
+        <div className={styles.WhatContainer} id='contact'>
             <div className={styles.aboutHead}>
                 <h4>How to buy</h4>
             </div>
@@ -215,7 +215,7 @@ const Skill: React.FC<Skillprop> = ({ number, name, progress }) => {
 
 export const Allocation: React.FC = () => {
     return (
-        <div className={styles.WhatContainer}>
+        <div className={styles.WhatContainer} id="aa">
             <div className={styles.aboutHead}>
                 <h4>Allocation</h4>
             </div>
