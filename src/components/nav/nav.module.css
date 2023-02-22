@@ -467,6 +467,16 @@
     .progress>h4 {
         align-self: center;
     }
+    .socials a{
+
+        text-align: center;
+    }
+    .AllocationContain{
+        align-self: center;
+    }
+    .AllocationContain p,.AllocationContain h2{
+        text-align: center;
+    }
 
 
 
@@ -557,7 +567,16 @@
     .progress>h4 {
         align-self: center;
     }
+    .socials a{
 
+        text-align: center;
+    }
+    .AllocationContain{
+        align-self: center;
+    }
+    .AllocationContain p,.AllocationContain h2{
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -643,6 +662,21 @@
 
     .progress>h4 {
         align-self: center;
+    }
+    .socials{
+        padding: 0;
+        align-self: center;
+    }
+    .socials a{
+        
+        text-align: center;
+    }
+    .AllocationContain{
+        align-self: center;
+        text-align: center;
+    }
+    .AllocationContain p,.AllocationContain h2{
+        text-align: center;
     }
 
 

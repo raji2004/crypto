@@ -256,12 +256,13 @@ export const Social: React.FC = () => {
                 <p className={styles.Allocationtitle}>
                     Want to join the community?
                 </p>
-                <h2 className="entry-title medium-text" style={{paddingBottom:0}}>
+                <h2 className="entry-title medium-text" style={{ paddingBottom: 0 }}>
                     Connect with <br />
                     Us.
                 </h2>
-                <p className={styles.Allocationtitle}>
-                    Want to join the community?
+                <p className={styles.Allocationtitle} style={ {marginTop:-30,marginBottom:30}}>
+                    Social presence is a critical aspect of any product, and we encourage you to play your role in expanding our reach. Please follow our links and stay connected with the team.
+
                 </p>
                 <div className={styles.socials}>
                     <a href="https://twitter.com/IA_Token" target="_blank" rel="noreferrer"> Telegram</a>
