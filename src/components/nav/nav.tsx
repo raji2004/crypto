@@ -266,8 +266,8 @@ export const Social: React.FC = () => {
 
                 </p>
                 <div className={styles.socials}>
-                    <a href="https://twitter.com/IA_Token" target="_blank" rel="noreferrer"> Telegram</a>
-                    <a href="https://twitter.com/IA_Token" target="_blank" rel="noreferrer"> Twitter</a>
+                    <a href="https://t.me/AlienAIprotocol" target="_blank" rel="noreferrer"> Telegram</a>
+                    <a href="https://t.me/AlienAIprotocol" target="_blank" rel="noreferrer"> Twitter</a>
                 </div>
             </div>
 
